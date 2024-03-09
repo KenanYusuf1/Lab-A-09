@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Navigate to your Terraform directory if it's not in the root
+# cd path/to/your/terraform/files
+
+echo "Running Terraform format check..."
+terraform fmt -check -recursive
+
+echo "Validating Terraform configurations..."
+terraform validate
+
+echo "Running tflint..."
+tflint

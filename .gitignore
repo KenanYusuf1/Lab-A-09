@@ -1,0 +1,26 @@
+# Node modules and dependencies
+node_modules/
+ 
+# Terraform state files and logs
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfplan
+*.tfschema
+.terraform/
+*.tfbackup
+ 
+# Ignore log files and directories
+*.log
+*.tflint.cache
+ 
+# Ignore system files
+.DS_Store
+Thumbs.db
+ 
+# Ignore environment-specific files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
